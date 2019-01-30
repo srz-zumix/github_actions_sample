@@ -1,8 +1,8 @@
-workflow "New workflow" {
+workflow "Main workflow" {
   on = "push"
-  resolves = ["GitHub Action for npm"]
+  resolves = ["action a"]
 }
 
-action "GitHub Action for npm" {
-  uses = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
+action "action a" {
+  uses = "./actions-a"
 }
