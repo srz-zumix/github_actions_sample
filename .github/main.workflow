@@ -4,5 +4,6 @@ workflow "Main workflow" {
 }
 
 action "action a" {
-  uses = "./actions-a"
+  uses = "./action-a"
+  args = "hello world"
 }
