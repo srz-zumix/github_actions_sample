@@ -1,3 +1,5 @@
-#!/bin/sh -l
+#!/bin/sh
+
+set -exu
 
 sh -c "echo $*"
