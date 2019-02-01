@@ -1,9 +1,17 @@
 workflow "Main workflow" {
   on = "push"
-  resolves = ["action a"]
+  resolves = [
+    "action a",
+    "Hello World B",
+  ]
 }
 
 action "action a" {
   uses = "./action-a"
   args = "hello world"
+}
+
+action "Hello World B" {
+  uses = "./.github/action-b"
+  runs = "aaaaa"
 }
