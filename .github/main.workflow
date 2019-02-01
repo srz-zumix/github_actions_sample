@@ -13,5 +13,5 @@ action "action a" {
 
 action "Hello World B" {
   uses = "./.github/action-b"
-  runs = "aaaaa"
+  args = "aaaaa"
 }
